@@ -26,7 +26,7 @@
 			<nav id="nav">
 				<ul class="links">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="generic.html">Resume</a></li>
+					<li><a href="resume.html">Resume</a></li>
 					<!-- <li><a href="elements.html">Elements</a></li> -->
 				</ul>
 			</nav>
@@ -70,7 +70,7 @@
 		<!-- Two -->
 			<section id="two" class="wrapper style2 alt">
 					<ul class="actions special">
-						<li><a href="#" class="button alt">PROJECTS</a></li>
+						<li><a class="button alt">PROJECTS</a></li>
 					</ul>
 				<div class="inner">
 					<div class="spotlight">
@@ -121,37 +121,39 @@
 						<p>I am hardworking and will definitely exceed your customer's expectation</p>
 					</header>
 					<ul class="actions">
-						<li><a href="#" class="button big alt"></a></li>
+						<li><a href="#four" class="button big alt">CONTACT ME</a></li>
 					</ul>
 				</div>
 			</section>
 			
 		<!-- Four -->
-			<section id="four" class="wrapper style2 special">
+			<section id="four" style="background-color:#D3D6DE" class="wrapper style2 special">
 				<div class="inner">
 					<header class="major narrow">
 						<h2>Get in touch</h2>
-						<p>Ipsum dolor tempus commodo adipiscing</p>
 					</header>
-					<form action="#" method="POST">
-						<div class="container 75%">
-							<div class="row uniform 50%">
-								<div class="6u 12u$(xsmall)">
-									<input name="name" placeholder="Name" type="text" />
-								</div>
-								<div class="6u$ 12u$(xsmall)">
-									<input name="email" placeholder="Email" type="email" />
-								</div>
-								<div class="12u$">
-									<textarea name="message" placeholder="Message" rows="4"></textarea>
-								</div>
-							</div>
-						</div>
-						<ul class="actions">
-							<li><input type="submit" class="special" value="Submit" /></li>
-							<li><input type="reset" class="alt" value="Reset" /></li>
-						</ul>
-					</form>
+					<div id="wufoo-m1xfm41802oqdwy">
+						Fill out my <a href="https://jmwenda.wufoo.com/forms/m1xfm41802oqdwy">online form</a>.
+					</div>
+					<div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">HTML Forms powered by <a href="http://www.wufoo.com">Wufoo</a>.</div>
+
+					<script type="text/javascript">var m1xfm41802oqdwy;(function(d, t) {
+					var s = d.createElement(t), options = {
+					'userName':'jmwenda',
+					'formHash':'m1xfm41802oqdwy',
+					'autoResize':true,
+					'height':'420',
+					'async':true,
+					'host':'wufoo.com',
+					'header':'show',
+					'ssl':true};
+					s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+					s.onload = s.onreadystatechange = function() {
+					var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+					try { m1xfm41802oqdwy = new WufooForm();m1xfm41802oqdwy.initialize(options);m1xfm41802oqdwy.display(); } catch (e) {}};
+					var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+					})(document, 'script');</script>
+
 				</div>
 			</section>
 				
@@ -160,23 +162,13 @@
 			<footer id="footer">
 				<div class="inner">
 					<ul class="icons">
-						<li><a href="#" class="icon fa-facebook">
-							<span class="label">Facebook</span>
-						</a></li>
-						<li><a href="#" class="icon fa-twitter">
-							<span class="label">Twitter</span>
-						</a></li>
-						<li><a href="#" class="icon fa-instagram">
-							<span class="label">Instagram</span>
-						</a></li>
-						<li><a href="#" class="icon fa-linkedin">
-							<span class="label">LinkedIn</span>
+						<li><a href="https://ke.linkedin.com/in/johnmwenda" target="_blank" >
+							<img src="images/linkedin.png" />
 						</a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Untitled.</li>
-						<li>Images: <a href="http://unsplash.com">Unsplash</a>.</li>
-						<li>Design: <a href="http://templated.co">TEMPLATED</a>.</li>
+						<li>&copy;John-WebDeveloper</li>
+						<li>Design: <a href="http://johnmwenda.github.io">John-WebDeveloper</a>.</li>
 					</ul>
 				</div>
 			</footer>
