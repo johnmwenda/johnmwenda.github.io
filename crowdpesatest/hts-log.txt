@@ -1,0 +1,35 @@
+HTTrack3.48-22+htsswf+htsjava launched on Mon, 30 May 2016 14:09:29 at http://crowdpesa.co.ke +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://crowdpesa.co.ke -O1 "C:\My Web Sites\crowdpesa" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+14:10:03	Error: 	"Not Found" (404) at link www.crowdpesa.co.ke/images/icon.png (from crowdpesa.co.ke/)
+14:10:03	Error: 	"Not Found" (404) at link crowdpesa.co.ke/opensearch.xml (from crowdpesa.co.ke/)
+14:11:57	Warning: 	Retry after error 500 (Internal Server Error) at link crowdpesa.co.ke/images/down_arrow1.png (from crowdpesa.co.ke/)
+14:11:57	Error: 	"Not Found" (404) at link www.crowdpesa.co.ke/css/templates/blue/images/heart_wish.png (from www.crowdpesa.co.ke/css/templates/blue/combine.css)
+14:11:57	Error: 	"Not Found" (404) at link www.crowdpesa.co.ke/css/templates/img/docs.png (from www.crowdpesa.co.ke/css/templates/blue/combine.css)
+14:11:57	Error: 	"Not Found" (404) at link www.crowdpesa.co.ke/css/templates/img/bubble.png (from www.crowdpesa.co.ke/css/templates/blue/combine.css)
+14:11:57	Error: 	"Not Found" (404) at link www.crowdpesa.co.ke/css/templates/img/arrow.png (from www.crowdpesa.co.ke/css/templates/blue/combine.css)
+14:11:57	Error: 	"Not Found" (404) at link www.crowdpesa.co.ke/css/templates/images/docs.png (from www.crowdpesa.co.ke/css/templates/blue/combine.css)
+14:11:57	Error: 	"Not Found" (404) at link www.crowdpesa.co.ke/css/templates/images/bubble.png (from www.crowdpesa.co.ke/css/templates/blue/combine.css)
+14:11:57	Error: 	"Not Found" (404) at link www.crowdpesa.co.ke/css/templates/images/arrow.png (from www.crowdpesa.co.ke/css/templates/blue/combine.css)
+14:11:57	Error: 	"Not Found" (404) at link www.crowdpesa.co.ke/images/images/email_friends_box_shadow.png (from www.crowdpesa.co.ke/css/templates/blue/combine.css)
+14:11:57	Error: 	"Not Found" (404) at link www.crowdpesa.co.ke/images/icon_arrow.png (from www.crowdpesa.co.ke/css/templates/blue/combine.css)
+14:11:57	Error: 	"Not Found" (404) at link www.crowdpesa.co.ke/images/loading_16.gif (from www.crowdpesa.co.ke/css/templates/blue/combine.css)
+14:11:59	Error: 	"Internal Server Error" (500) after 2 retries at link www.crowdpesa.co.ke/robots.txt (from www.crowdpesa.co.ke/css/templates/blue/home.css)
+14:11:59	Error: 	"Not Found" (404) at link www.crowdpesa.co.ke/css/templates/blue/helvetica.woff (from www.crowdpesa.co.ke/css/templates/blue/home.css)
+14:11:59	Error: 	"Not Found" (404) at link www.crowdpesa.co.ke/css/templates/blue/helvetica.ttf (from www.crowdpesa.co.ke/css/templates/blue/home.css)
+14:11:59	Error: 	"Not Found" (404) at link www.crowdpesa.co.ke/css/templates/blue/helvetica.svg (from www.crowdpesa.co.ke/css/templates/blue/home.css)
+14:13:16	Warning: 	Retry after error 500 (Internal Server Error) at link www.crowdpesa.co.ke/css/templates/blue/images/Banner6.jpg (from www.crowdpesa.co.ke/css/templates/blue/browse.css)
+14:13:16	Warning: 	Retry after error 500 (Internal Server Error) at link www.crowdpesa.co.ke/css/templates/blue/crosshair.gif (from www.crowdpesa.co.ke/css/templates/blue/browse.css)
+14:13:16	Error: 	"Not Found" (404) at link www.crowdpesa.co.ke/css/templates/blue/fontawesome-webfont.svg?v=4.2.0 (from www.crowdpesa.co.ke/css/templates/blue/font-awesome.min.css)
+14:13:16	Warning: 	Retry after error 500 (Internal Server Error) at link crowdpesa.co.ke/images/down_arrow1.png (from crowdpesa.co.ke/)
+14:13:17	Error: 	"Not Found" (404) at link www.crowdpesa.co.ke/css/templates/blue/images/Banner6.jpg (from www.crowdpesa.co.ke/css/templates/blue/browse.css)
+14:13:17	Error: 	"Not Found" (404) at link www.crowdpesa.co.ke/css/templates/blue/crosshair.gif (from www.crowdpesa.co.ke/css/templates/blue/browse.css)
+14:13:17	Error: 	"Not Found" (404) at link crowdpesa.co.ke/images/down_arrow1.png (from crowdpesa.co.ke/)
+
+HTTrack Website Copier/3.48-22 mirror complete in 3 minutes 48 seconds : 172 links scanned, 147 files written (5660533 bytes overall) [4509202 bytes received at 19777 bytes/sec], 2093006 bytes transferred using HTTP compression in 53 files, ratio 36%, 9.5 requests per connection
+(20 errors, 4 warnings, 0 messages)

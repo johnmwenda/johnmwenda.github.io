@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+crowdpesa.co.ke	TRUE	/	FALSE	1999999999	ci_session	a%3A4%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A32%3A%222892c6a8aaf46c846fb10ce45d41dbcb%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A12%3A%22154.70.48.46%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A50%3A%22Mozilla%2F4.5+%28compatible%3B+HTTrack+3.0x%3B+Windows+98%29%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1464606569%3B%7Dd59f835693e5679aa72e1f3e16826790
+.crowdpesa.co.ke	TRUE	/	FALSE	1999999999	__cfduid	dad02a77b02bc42581b00de2b5c5a5b611464606796
+
