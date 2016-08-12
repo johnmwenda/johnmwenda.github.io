@@ -1,0 +1,165 @@
+<ion-view view-title="Playlists" hide-nav-bar="true">
+  <ion-content class="padding full-height" style="background: url(img/start.jpg) center; background-size: cover";>
+
+
+    <section class="login-container">
+        <div class = "header text-center">
+           
+                <img style="max-width:100%" src="img/myApp.jpg"/>
+                <h4>Lend, Borrow, Grow</h4>
+                    
+           
+        </div>
+<!--        
+       <div class = "row text-center">
+            <div class="col">-->
+<!--        <form ng-submit="doLogin(loginData)">    
+            <div class="list inset-list">
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">email</span>
+                    <input type="text" placeholder="Your Email" ng-model="loginData.username">
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">password</span>
+                    <input type="text" placeholder="Password" ng-model="loginData.password">
+                </label>
+            </div>
+            <div class="row text-center">
+                <div class="col">
+                    <button class="button button-block button-calm ink" data-ink-color="#9DEAFF" 
+                            data-ink-opacity="1" type="submit">
+                            LOGIN
+                    </button>
+
+                </div>
+                <div class="col col-center">
+                   <a href="#">Forgot your password?</a>
+                </div>
+            </div>  end of ng-submit form
+        </form>-->
+<!--ORIGINAL FORM-->
+<!--    <form novalidate>    
+        <div class="list inset-list">
+            <label class="item item-input item-floating-label">
+                <span class="input-label">email</span>
+                <input type="text" placeholder="Your Email" ng-model="loginData.username">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">password</span>
+                <input type="password" placeholder="Password" ng-model="loginData.password">
+            </label>
+            
+        </div>
+        <div class="row text-center">
+            <div class="col">
+                <button class="button button-block button-calm ink" data-ink-color="#9DEAFF" 
+                        data-ink-opacity="1" ng-disabled="myForm.$invalid" ng-click="doLogin(loginData)">
+                        LOGIN
+                </button>
+
+            </div>
+            <div class="col col-center">
+               <a href="#">Forgot your password?</a>
+            </div>
+        </div>  
+    </form>-->
+<!--FINAL JS VALIDATION-->
+<form name="authorizationForm" novalidate="" ng-submit="doLogin(authorizationForm)">    
+        <div class="list inset-list">
+            <label class="item item-input item-floating-label" 
+                   ng-class="{ 'has-errors' : (authorizationForm.username.$invalid && authorizationForm.username.$touched ), 'no-errors' : authorizationForm.username.$valid}">
+                <span class="input-label">email</span>
+                <input type="text" name="username" placeholder="Your Email" ng-model="loginData.username" ng-maxlength="20" required>
+            </label>
+             <div class="error-container" 
+                  ng-show="authorizationForm.username.$error && authorizationForm.username.$touched" 
+                  ng-messages="authorizationForm.username.$error">
+                <div ng-messages-include="error-list.html"></div> 
+            </div>  
+            <label class="item item-input item-floating-label"
+                   ng-class="{ 'has-errors' : authorizationForm.password.$invalid && authorizationForm.$submitted, 'no-errors' : authorizationForm.password.$valid  && authorizationForm.$submitted}">
+                <span class="input-label">password</span>
+                <input type="password" name="password" placeholder="Password" ng-model="loginData.password" 
+                       ng-minlength="3" ng-maxlength="20" required>
+            </label>
+             <div class="error-container last-error-container" 
+                  ng-show="authorizationForm.password.$error && authorizationForm.$submitted" 
+                  ng-messages="authorizationForm.password.$error">
+                <div ng-messages-include="error-list.html"></div> 
+            </div>  
+            
+        </div>
+        <div class="row text-center">
+            <div class="col">
+                <button class="button button-block button-calm ink"  data-ink-color="#9DEAFF" 
+                        data-ink-opacity="1"  type="submit">
+                        LOGIN
+                </button>
+
+            </div>
+            <div class="col col-center">
+               <a href="#">Forgot your password?</a>
+            </div>
+        </div>  
+    </form>
+<!--        </div>
+        </div>-->
+       
+        <div class="row text-center">
+            <div class="col">Or login with</div>
+        </div>
+                
+<!--            <div clas="button-bar">
+                <button class="button button-small button-border icon-left ion-social-facebook button-positive-900">Fb</button>
+                <button class="button button-small button-border icon-left ion-social-twitter button-calm-900">Twit</button>
+                <button class="button button-small button-border icon-left ion-social-google button-assertive-900">Go</button>
+            </div>-->
+
+                 <div class="button-bar">
+                <a class="button button-positive-900 ink">Facebook</a>
+                <a class="button button-calm-900">Twitter</a>
+                <a class="button button-assertive-900">Google</a>
+            </div>
+     
+        <div class="row button-row">
+            <div class="col">
+                
+            </div>
+        </div>
+          
+     
+      
+        <div class = "row text-center">
+            <div class="col">
+            Dont have an account? 
+            <br/><strong><h4><a href = "#">Sign up now!</a></h4></strong>
+            </div>
+        </div> 
+        username: admin<br/>
+        password: admin<br/>
+        {{username}}
+        {{settings}}
+        {{checkDetails}}
+       
+       
+       </section>
+    
+            
+            
+    <!-- Forms -->
+           <!-- <div class="list list-inset">
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">First Name</span>
+                    <input type="text" placeholder="First Name">
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Last Name</span>
+                    <input type="text" placeholder="Last Name">
+                </label>      
+               
+            </div> -->
+   
+       
+  </ion-content>
+<!--    <ion-footer-bar class="bar-assertive"><h1 class="title">www.crowdpesa.co.ke</h1></ion-footer-bar>-->
+</ion-view>

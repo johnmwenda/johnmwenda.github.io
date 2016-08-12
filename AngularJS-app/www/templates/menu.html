@@ -1,0 +1,79 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-assertive" align-title="center">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+        
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+ <ion-side-menu side="left">
+     <ion-header-bar class="bar-stable expanded bar-header">
+      <img ng-src="{{user.avatar}}" class="avatar motion spin fade">
+        <div class="menu-bottom">
+            John Mwenda Kiara
+        </div>
+    </ion-header-bar>
+      
+<!--      <ion-header-bar class="expanded">
+            <img src="img/logo.png" class="avatar motion spin fade">
+            <div class="menu-bottom">
+                Ionic Material API
+            </div>
+        </ion-header-bar>-->
+      
+<!--change the color of side menu-->
+    <ion-content class="assertive stable-bg has-expanded-header scroll-content
+                 ionic-scroll overflow-scroll  has-header"> 
+      <ion-list>
+        <ion-item menu-close ng-click="login()">
+          Profile
+        </ion-item>
+        <ion-item menu-close href="#/app/search">
+          My Wallet
+        </ion-item>
+        <ion-item menu-close href="#/app/browse">
+          Browse
+        </ion-item>
+        <ion-item menu-close href="#/app/playlists">
+          How it Works
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+    
+<!--    <ion-side-menu side="left">
+        <ion-header-bar class="expanded">
+            <img src="img/logo.png" class="avatar motion spin fade">
+            <div class="menu-bottom">
+                Ionic Material API
+            </div>
+        </ion-header-bar>
+        <ion-content class="stable-bg has-expanded-header">
+            <ion-list>
+                <ion-item nav-clear menu-close href="#/app/components">
+                    Components+
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/extensions">
+                    Extensions
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/lists">
+                    Motion Lists
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/motion">
+                    Motion Elements
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/ink">
+                    Ink
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>-->
+    
+</ion-side-menus>

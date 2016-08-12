@@ -1,0 +1,76 @@
+<ion-view view-title="My Sample App" hide-back-button="false">
+  <ion-content class="borrow">
+    <h1>Loan Listings</h1>
+    
+    <div class="list">
+
+<!--      <a class="item item-avatar">
+        <div ng-class="isItemShown(item) ? 'item-expand active' : 'item-expand inactive'">
+        <div>
+          <h2>{{ item.id }}</h2>
+          <p>{{ item.title }}</p>
+        <img src="img/avatar.jpg">
+        <h2>Venkman</h2>
+        <p>Back off, man. I'm a scientist.</p>
+        </div>
+        <div ng-click="toggleItem(item)" class="item-expand-footer">
+          <i ng-class="isItemShown(item) ? 'ion-ios-minus-outline' : 'ion-ios-plus-outline'"></i>
+          {{ isGroupShown(item) ? 'Less' : 'More' }}
+        </div>
+      </a>-->
+
+<!--THIS VERSION EXPANDS ON CLICK THEN CLICK AGAIN TO GO NEXT VIEW-->
+<!--    <div ng-repeat="item in items" ng-click="toggleItem(item)">
+        <a class="item item-avatar item-text-wrap"  style="padding-left: 72px;
+           position:relative;float:left;border-bottom: 1px solid #afafaf">
+            <img src="img/material1.jpg">
+            <span class="badge badge-assertive">Ksh. 9,000</span>
+            <div ng-class="isItemShown(item) ? 'item-expand active' : 'item-expand inactive'">
+            <h2>Alex Kiogora</h2>
+            <p>ID: 53</p>
+            <span>Terms</span><br/>
+            <span>20.75% Interest</span><br/>
+            <span>30 days period</span><br/>
+            <span>No Installments</span> <br/>
+             <button class="button button-small button-calm ink"  data-ink-color="#9DEAFF" 
+            data-ink-opacity="1"  type="submit">
+            View Details
+            </button>
+            </div>            
+            
+        </a>
+        <div ng-click="toggleItem(item)" class="item-expand-footer badge">
+            <i ng-class="isItemShown(item) ? 'ion-ios-minus-outline' : 'ion-ios-plus-outline'"></i>
+            {{ isGroupShown(item) ? 'Hide' : 'Quick View' }}
+        </div>
+        <div style=""></div>
+    </div>-->
+
+     <a ng-repeat="item in items" class="item item-avatar item-text-wrap" href="#/app/borrow/{{id}}"  style="padding-left: 72px;
+        position:relative;float:left;border-bottom: 1px solid #afafaf">
+         <img src="img/material1.jpg">
+         <span class="badge badge-assertive">Ksh. 9,000</span>
+         <!--<div ng-class="isItemShown(item) ? 'item-expand active' : 'item-expand inactive'">-->
+         <h2>Alex Kiogora</h2>
+         <p style="text-align: right;margin-top: 10px;margin-right: 10%;">ID: 53</p>
+<!--         <span>Terms</span><br/>
+         <span>20.75% Interest</span><br/>
+         <span>30 days period</span><br/>
+         <span>No Installments</span> <br/>-->
+<!--          <button class="button button-small button-calm ink"  data-ink-color="#9DEAFF" 
+         data-ink-opacity="1"  type="submit">
+         View Details
+         </button>-->
+         <!--</div>-->     
+    </a>
+
+
+      
+
+
+
+    </div>
+
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,367 @@
+<!--<ion-view view-title="Browse">
+  <ion-content>
+    <h1>Dashboard</h1>
+    
+    <a class="button button-positive-900 ink" ng-click="performValidRequest()">Facebook</a>
+    <a class="button button-calm-900" ng-click="performunauthorizedRequest()">Twitter</a>
+    <a class="button button-assertive-900" ng-click="performInvalidRequest()">Google</a>
+    <br>
+    {{username}}<br/>
+    {{result}}<br/>
+    {{eventGenerated}}
+    
+    
+  </ion-content>
+</ion-view>-->
+ 
+<ion-view view-title="My Sample App" hide-back-button="true" class="customDashboardView">
+     
+
+    <ion-nav-buttons side="right">
+    <span ui-sref="app.cart" >
+      <button class="button button-clear icon ion-android-cart white-color">
+        
+      </button>
+      <span ng-show="cart.products.length" class="cart-badge ng-hide">{{cart.products.length}}</span>
+    </span>
+    </ion-nav-buttons>
+
+  <ion-content scroll="true" class="dashboardContainer text-center">
+      
+<!--      <ion-list>
+        <ion-item menu-close ng-click="login()">
+          Login
+        </ion-item>
+        <ion-item menu-close href="#/app/search">
+          Search
+        </ion-item>
+        <ion-item menu-close href="#/app/browse">
+          Browse
+        </ion-item>
+        <ion-item menu-close href="#/app/playlists">
+          Playlists
+        </ion-item>
+      </ion-list>-->
+     
+<!--<div class="list">
+
+  <a class="item item-icon-left" href="#">
+    <i class="icon ion-email"></i>
+    Check mail
+  </a>
+
+  <a class="item item-icon-left item-icon-right" href="#">
+    <i class="icon ion-chatbubble-working"></i>
+    Call Ma
+    <i class="icon ion-ios-telephone-outline"></i>
+  </a>
+
+  <a class="item item-icon-left" href="#">
+    <i class="icon ion-mic-a"></i>
+    Record album
+    <span class="item-note">
+      Grammy
+    </span>
+  </a>
+
+  <a class="item item-icon-left" href="#">
+    <i class="icon ion-person-stalker"></i>
+    Friends
+    <span class="badge badge-assertive">0</span>
+  </a>
+
+</div>-->
+
+    <div class="row header">
+        <div class="col col-center mainButtons">
+            <button class="button button-clear button-assertive myButton" ui-sref="app.borrow">
+                <i class="myIcon icon ion-cash"></i>Borrow
+            </button>
+            <div id="borderRight"></div>
+        </div>
+        <div class="col col-center mainButtons ">
+            <button class="button button-clear button-assertive myButton" ui-sref="app.lend">
+                    <i class="myIcon icon ion-person-stalker"></i> Lend
+            </button>
+        </div>
+    </div>
+
+    <div class="row mySlider">
+        <div class="col item-icon-left list">
+          <ion-content scroll="false"> 
+               <h3 style="margin-top:5px;margin-bottom:-2%;color:#657741;">Featured Loans</h3>
+                <ion-slides  class="myIonSlides" options="options" slider="data.slider">                
+                   <ion-slide-page style="border-left: solid yellowgreen 7px;">
+                       
+                            <div class="row">
+                               <div class="col col-center col-60">
+                                   <div class="profPic">
+                                   <img src="img/avatar.jpg" align="left">
+                                   <span><h4 style="margin:0">John Mwenda</h4></span>
+                                   <span><h5 style="margin:0">ID: 504</h5></span>
+       <!--                            <p>This is some text. <img src="img/avatar" 
+                                   alt="Smiley face" width="42" height="42" style="vertical-align:middle"> 
+                                   This is some text.</p>-->
+                                   </div>
+                               </div>
+                                <div class="col col-center ammount">
+       <!--                            <i class="ammount-icon icon ion-person-stalker"></i> Lend-->
+                                   <h3>Kshs 9,000/-</h3>
+                               </div>
+                            </div>
+                              <hr style="width: calc(100% - 25%);
+                       border-bottom: rgba(0, 0, 0, 0.6);margin-top:-4%;margin-left:19%;">
+                           <div class="row" style="margin-top:-18px">
+                               <div class="col text-center" style="margin-left:10%">
+                                   <h5>TERMS</h5>
+                                   <span>20.75% Interest</span><br/>
+                                   <span>30 days period</span><br/>
+                                   <span>No Installments</span>                           
+                               </div>
+                               <div class="col col-bottom text-right">
+                                   <button class="button button-small button-assertive-900">VIEW LOAN</button>
+                               </div>                            
+                           </div>
+                       
+                   </ion-slide-page>
+                    <ion-slide-page style="border-left: solid yellowgreen 7px;">
+                       
+                            <div class="row">
+                               <div class="col col-center col-60">
+                                   <div class="profPic">
+                                   <img src="img/avatar.jpg" align="left">
+                                   <span><h4 style="margin:0">John Mwenda</h4></span>
+                                   <span><h5 style="margin:0">ID: 504</h5></span>
+       <!--                            <p>This is some text. <img src="img/avatar" 
+                                   alt="Smiley face" width="42" height="42" style="vertical-align:middle"> 
+                                   This is some text.</p>-->
+                                   </div>
+                               </div>
+                                <div class="col col-center ammount">
+       <!--                            <i class="ammount-icon icon ion-person-stalker"></i> Lend-->
+                                   <h3>Kshs 9,000/-</h3>
+                               </div>
+                            </div>
+                              <hr style="width: calc(100% - 25%);
+                       border-bottom: rgba(0, 0, 0, 0.6);margin-top:-4%;margin-left:19%;">
+                           <div class="row" style="margin-top:-18px">
+                               <div class="col text-center" style="margin-left:10%">
+                                   <h5>TERMS</h5>
+                                   <span>20.75% Interest</span><br/>
+                                   <span>30 days period</span><br/>
+                                   <span>No Installments</span>                           
+                               </div>
+                               <div class="col col-bottom text-right">
+                                   <button class="button button-small button-assertive-900">VIEW LOAN</button>
+                               </div>                            
+                           </div>
+                       
+                   </ion-slide-page>
+                    <ion-slide-page style="border-left: solid yellowgreen 7px;">
+                       
+                            <div class="row">
+                               <div class="col col-center col-60">
+                                   <div class="profPic">
+                                   <img src="img/avatar.jpg" align="left">
+                                   <span><h4 style="margin:0">John Mwenda</h4></span>
+                                   <span><h5 style="margin:0">ID: 504</h5></span>
+       <!--                            <p>This is some text. <img src="img/avatar" 
+                                   alt="Smiley face" width="42" height="42" style="vertical-align:middle"> 
+                                   This is some text.</p>-->
+                                   </div>
+                               </div>
+                                <div class="col col-center ammount">
+       <!--                            <i class="ammount-icon icon ion-person-stalker"></i> Lend-->
+                                   <h3>Kshs 9,000/-</h3>
+                               </div>
+                            </div>
+                              <hr style="width: calc(100% - 25%);
+                       border-bottom: rgba(0, 0, 0, 0.6);margin-top:-4%;margin-left:19%;">
+                           <div class="row" style="margin-top:-18px">
+                               <div class="col text-center" style="margin-left:10%">
+                                   <h5>TERMS</h5>
+                                   <span>20.75% Interest</span><br/>
+                                   <span>30 days period</span><br/>
+                                   <span>No Installments</span>                           
+                               </div>
+                               <div class="col col-bottom text-right">
+                                   <button class="button button-small button-assertive-900">VIEW LOAN</button>
+                               </div>                            
+                           </div>
+                       
+                   </ion-slide-page>
+                    <ion-slide-page style="border-left: solid yellowgreen 7px;">
+                       
+                            <div class="row">
+                               <div class="col col-center col-60">
+                                   <div class="profPic">
+                                   <img src="img/avatar.jpg" align="left">
+                                   <span><h4 style="margin:0">John Mwenda</h4></span>
+                                   <span><h5 style="margin:0">ID: 504</h5></span>
+       <!--                            <p>This is some text. <img src="img/avatar" 
+                                   alt="Smiley face" width="42" height="42" style="vertical-align:middle"> 
+                                   This is some text.</p>-->
+                                   </div>
+                               </div>
+                                <div class="col col-center ammount">
+       <!--                            <i class="ammount-icon icon ion-person-stalker"></i> Lend-->
+                                   <h3>Kshs 9,000/-</h3>
+                               </div>
+                            </div>
+                              <hr style="width: calc(100% - 25%);
+                       border-bottom: rgba(0, 0, 0, 0.6);margin-top:-4%;margin-left:19%;">
+                           <div class="row" style="margin-top:-18px">
+                               <div class="col text-center" style="margin-left:10%">
+                                   <h5>TERMS</h5>
+                                   <span>20.75% Interest</span><br/>
+                                   <span>30 days period</span><br/>
+                                   <span>No Installments</span>                           
+                               </div>
+                               <div class="col col-bottom text-right">
+                                   <button class="button button-small button-assertive-900">VIEW LOAN</button>
+                               </div>                            
+                           </div>
+                       
+                   </ion-slide-page>
+<!--                   <ion-slide-page>
+                     <div class="box yellow"><h1>YELLOW</h1></div>
+                   </ion-slide-page>
+                   <ion-slide-page>
+                     <div class="box pink"><h1>PINK</h1></div>
+                   </ion-slide-page>-->
+                 </ion-slides>
+               </ion-content>
+        </div>
+    </div>
+
+    <div class="row dashboardFooter">
+        <div class="col col-center item-icon-left list">
+             <a class="item item-icon-left">
+                        <i class="icon ion-email"></i> Invite your friends and earn 100 Ksh
+                    </a>
+            <hr style="width: calc(100% - 15%);
+                border-bottom: rgba(0, 0, 0, 0.6);">
+        </div>
+    </div>
+
+<!--    <div class="bar bar-footer">
+        <button class="button button-clear">Left</button>
+            <div class="title">Title</div>
+        <button class="button button-clear">Right</button>
+    </div>-->
+
+   
+
+   
+  </ion-content>
+</ion-view>
+
+
+<!-- <ion-view view-title="CrowdPesa" hide-back-button="true">
+     
+
+    <ion-nav-buttons side="right">
+    <span ui-sref="app.cart" >
+      <button class="button button-clear icon ion-android-cart white-color">
+        
+      </button>
+      <span ng-show="cart.products.length" class="cart-badge ng-hide">{{cart.products.length}}</span>
+    </span>
+    </ion-nav-buttons>
+
+  <ion-content>
+   
+
+    <div ng-repeat="product in products">
+  
+      <div class="item item-image" style="position:relative;">
+        <img ng-src="{{product.image}}">
+        <button class="button button-positive product-price" ng-click="addProduct(product)">
+            <p class="white-color product-price-price">$ <b>{{product.price}}</b></p>
+            <p class="white-color product-price-text">
+                <i class="ion-android-cart"></i> <span>Buy now</span>
+            </p>  
+        </button> 
+    
+      </div>
+
+      <div class="item ui-gradient-deepblue">
+        <h1 class="title white-color sans-pro-light">{{product.title}}</h1>
+      </div>
+
+      <div class="item item-body">
+        {{product.description}}
+      </div>
+    </div> 
+    
+   
+ 
+<div class="list card">
+  
+    
+ 
+
+  <div class="item item-image" style="position:relative">
+    <img src="img/4a.jpg">
+  </div>
+
+  <a class="item item-icon-left assertive" href="#">
+    <i class="icon ion-person-addd"></i>
+    Request a new Loan
+  </a>
+    
+    
+    
+      
+</div>
+    
+    <div class="list card">
+  
+    
+ 
+
+  <div class="item item-image" style="position:relative">
+    <img src="img/4a.jpg">
+  </div>
+
+  <a class="item item-icon-left assertive" href="#">
+    <i class="icon ion-arrow-graph-up-left"></i>
+    View Available Loans
+  </a>
+      
+</div>
+    
+<div class="list card">
+  <div class="item item-text-wrap">
+    Invite your friends and earn money in your wallet
+    <br> Awesome!!{{username}}
+  </div>
+</div>
+    
+<div class="list card">
+
+  <div class="item item-avatar">
+    <img src="img/4a.jpg">
+    <h2>Marty McFly</h2>
+    <p>November 05, 1955</p>
+  </div>
+
+  <div class="item item-body">
+    <img class="full-image" src="delorean.jpg">
+    <p>
+      Success story or something nice 
+    </p>
+    <p>
+      <a href="#" class="subdued">1 Like</a>
+      <a href="#" class="subdued">5 Comments</a>
+    </p>
+  </div>
+
+</div>
+ 
+     
+
+
+    
+  </ion-content>
+</ion-view>-->

@@ -1,0 +1,189 @@
+/* Empty. Add your own CSS if you like */
+
+.login-container > .header {
+    padding-top: 18%;
+}
+
+.customDashboard ion-list {
+    background: #000;
+    color: #fff;
+  }
+  
+  .customDashboard ion-item {
+     text-align: center;
+  }
+  
+.customDashboardView .dashboardContainer{
+/*    display: flex; 
+     flex-direction: column;*/
+     height: 100%;
+}
+
+.dashboardContainer > .row {
+     /*flex: 1;*/
+}
+
+.dashboardContainer .header{
+    /*flex: 1.5;*/
+    border: none;
+    border-bottom: 2px solid #DEDEDE;
+    background: url('../img/bg2.jpg') no-repeat center center;
+    height: 40vh;
+}
+.dashboardContainer .mySlider{
+    height: 40vh;
+    /*border-left: solid yellowgreen 7px;*/
+    background: #FFFAFA;
+    margin-top:0;
+    margin-left: -5px;
+}
+.dashboardContainer .dashboardFooter{height: 20vh;}
+
+.dashboardContainer .mainButtons{
+    position: relative;
+    min-width: 50%;
+}
+
+.dashboardContainer .mainButtons #borderRight{
+    border-right: 1px solid #33cd5f;;
+    position: absolute;
+    top: 0%;
+    bottom: 0;
+    right: 0;
+}
+.mainButtons .myButton {
+  font-size: 20px;
+  line-height: 10px;
+  min-height: 75px;
+/*  margin-top: 20%;
+  margin-bottom: 20%;*/
+}
+.mainButtons .myIcon {
+  display: block;
+  font-size: 100px;
+  margin-bottom: 3px !important;
+}
+/*Menu Styling*/
+.menu .bar.bar-header.expanded {
+    background-image: url('../img/material-graphite.jpg');
+    background-size: 120%;
+    background-position: 0%;
+    transition: all .5s ease-in-out;
+}
+
+/*Slider*/
+.dashboardContainer .myIonSlides{
+    height: 85%;
+    text-align: left;
+}
+
+.dashboardContainer .profPic{
+    text-align: left;
+}
+.dashboardContainer .profPic img{
+    width: 25%;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+/*.box .ammount {
+  font-size: 20px;
+  line-height: 10px;
+  min-height: 75px;
+}
+.box .ammount-icon {
+  display: block;
+  font-size: 100px;
+  margin-bottom: 3px !important;
+}*/
+
+
+/* FORM VALIDATION STYLES */
+.error {
+  padding: 10px 16px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #555;
+  vertical-align: middle;
+}
+
+.error i {
+  font-size: 24px;
+  color: #B83E2C;  
+  vertical-align: middle;
+}
+
+.last-error-container > .error {
+  padding: 10px 16px 0;
+}
+
+.login-container .list .has-errors {
+  border-bottom: 3px solid #B83E2C;
+}
+
+.no-errors {
+  border-bottom: 3px solid green;
+}
+
+/*Borrow Page Styling*/
+/* CORE */
+.borrow .list .item{
+     display: block;
+     /*width: 70%;*/
+     /*float: left*/
+     /*padding-bottom: 0;*/
+     
+}
+.item-expand {
+  position: relative;
+  width: 100%;
+  max-height: 40px;
+  transition: max-height 0.1s ease-out;
+  overflow: hidden;
+}
+
+.item-expand.inactive:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 15px;
+  width: 100%;
+  display: block;
+/*  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, rgba(255, 255, 255, 0)),
+    color-stop(1, rgba(255, 255, 255, 1))
+  );
+  background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  background-image: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  background-image: -ms-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);*/
+}
+
+.item-expand.active {
+  max-height: 200px;
+  transition: max-height 0.3s ease-out;
+}
+
+
+/* DEMO */
+.item-expand-footer {
+    color: red; 
+    position: absolute;
+    right: 16px;
+    bottom: 0;   
+    margin-right: 15px;
+    text-align: center;
+    display: flex;
+    padding: 10px 8px;
+    margin-bottom: 3px;
+    border: 1px solid;
+}
+
+.item-expand-footer i {
+  margin-right: 5px;
+}
