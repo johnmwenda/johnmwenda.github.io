@@ -13,6 +13,27 @@
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
+		<style>
+			<style>
+				#wrapper { margin-left:9%; padding: 0; overflow: hidden; }
+				#scaled-frame { width: 500px; height: 800px; border: 0px; }
+				#scaled-frame {
+					zoom: 0.71;
+					-moz-transform: scale(0.71);
+					-moz-transform-origin: 0 0;
+					-o-transform: scale(0.71);
+					-o-transform-origin: 0 0;
+					-webkit-transform: scale(0.71);
+					-webkit-transform-origin: 0 0;
+				}
+
+				@media screen and (-webkit-min-device-pixel-ratio:0) {
+				 #scaled-frame  { zoom: 1;  }
+				}
+		</style>
+
+
+		</style>
 	</head>
 	<body class="landing">
 
@@ -27,20 +48,14 @@
 				<ul class="links">
 					<li><a href="../index.html">Home</a></li>
 					<li><a href="../resume.html">Resume</a></li>
+					<li><a href="index.html">Angular JS Demo App</a></li>
 					<!-- <li><a href="elements.html">Elements</a></li> -->
 				</ul>
 			</nav>
 
 		<!-- Banner -->
 			<section id="banner">
-				<a href="#" class="image-john">
-					<img src="../images/john.jpg"/>
-				</a>
-				<h2>ONLINE PORTFOLIO</h2>
-				<p>PHP, LARAVEL, JAVA, JOOMLA</p>
-				<!-- <ul class="actions">
-					<li><a href="#" class="button big special">Learn More</a></li>
-				</ul> JOHN-EDIT-->
+				
 			</section>
 		
 		<!-- One -->
@@ -49,11 +64,11 @@
 					
 					<section>
 					<ul class="actions special">
-						<li><a class="button alt">Angular JS APP</a></li>
+						<li><a class="button alt">Online Demo - AngularJS App</a></li>
 					</ul>
-					<p>This is an hybrid app that i created using Ionic Framework, Ionic framework and CodeIgniter Engines for the backend API. Scroll down to see the whole view
-					<div style="width:100%;overflow:hidden;">
-						<iframe src="http://johnmwenda.github.io/AngularJS-app/www/" width="400px" height="700px"  style="background: #b9d8e4;padding: 5px;border-radius: 8px;">
+					<p>This is an hybrid app that i created using Ionic Framework, AngularJS and CodeIgniter Engines for the backend API. Scroll down to see the whole view. <br/>NB/Its just a proof of concept 
+					<div id="wrapper" style="width:100%;overflow:hidden;padding-left: 10%">
+						<iframe id="scaled-frame" src="http://johnmwenda.github.io/AngularJS-app/www/" width="400px" height="700px"  style="background: #b9d8e4;padding: 5px;border-radius: 8px;">
 						  <p>Your browser does not support iframes.</p>
 						</iframe>
 					</div>
@@ -94,11 +109,11 @@
 
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+			<script src="../assets/js/main.js"></script>
 
 	</body>
 </html>
