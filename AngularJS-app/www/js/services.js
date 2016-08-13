@@ -61,7 +61,7 @@ angular.module('starter.services',[])
 //    };
 
     var login = function(name, pw){
-        return $q(function(resolve, reject){
+  /*       return $q(function(resolve, reject){
         CrowdPesaAPI.login(name, pw)
                 .then(function(response){
                     resolve(response);
@@ -77,16 +77,16 @@ angular.module('starter.services',[])
                 
                 
             ;
-        });
+        }); */
        //FAKE LOGIN
-//        return $q(function(resolve, reject){
-//                            if(true){
-//                                resolve("always true from provider");
-//                            }
-//                            else{
-//                                reject("just fale from provider");
-//                            }
-//        });
+        return $q(function(resolve, reject){
+                            if(true){
+                                resolve("always true from provider");
+                            }
+                            else{
+                                reject("just fale from provider");
+                            }
+        });
         
         
 //        return  $http.get('http://localhost:8100/valid');
