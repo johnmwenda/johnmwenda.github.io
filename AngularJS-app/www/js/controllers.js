@@ -475,10 +475,10 @@ angular.module('starter.controllers', [])
                $scope.checkDetails = response;
               hide();
             }, function(error){
-//                 var alertPopup = $ionicPopup.alert({
-//                   title: 'Login failed',
-//                   template: 'Please check your credentials and try again'
-//               });
+                 var alertPopup = $ionicPopup.alert({
+                   title: 'Login failed',
+                   template: 'Please check your credentials and try again'
+               });
                     $scope.checkDetails = error;
                     hide();
             })
