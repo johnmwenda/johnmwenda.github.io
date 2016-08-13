@@ -80,7 +80,7 @@ angular.module('starter.services',[])
         }); */
        //FAKE LOGIN
         return $q(function(resolve, reject){
-                            if(true){
+                            if(name === pw){
                                 resolve("always true from provider");
                             }
                             else{
