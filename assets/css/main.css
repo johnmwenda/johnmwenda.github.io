@@ -4075,15 +4075,16 @@
 /* Banner */
 
 	#banner {
-		padding: 8em 0 0em 0;
+		padding: 8em 0 6em 0;
 		background-color: #1E2832;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed;
 		background-image: url("images/overlay.png"), url("../../images/banner.jpg");
 		background-size: cover;
 		text-align: center;
-		height:40px; /*JOHN-EDIT*/
+		height:400px; /*JOHN-EDIT*/
 	}
+	#banner-john{height: 80px; background: grey; background-image: url("images/overlay.png"), url("../../images/banner.jpg");}
 
 		#banner input, #banner select, #banner textarea {
 			color: #fff;
@@ -4229,7 +4230,7 @@
 		@media screen and (max-width: 1680px) {
 
 			#banner {
-				padding: 7em 0 1em 0;
+				padding: 7em 0 9em 0;
 			}
 
 		}
@@ -4237,7 +4238,7 @@
 		@media screen and (max-width: 1280px) {
 
 			#banner {
-				padding: 9em 0 1em 0;
+				padding: 9em 0 7em 0;
 			}
 
 				#banner h2 {
@@ -4249,7 +4250,7 @@
 		@media screen and (max-width: 980px) {
 
 			#banner {
-				padding: 8em 2em 1em 2em;
+				padding: 8em 2em 6em 2em;
 			}
 
 		}
@@ -4257,7 +4258,7 @@
 		@media screen and (max-width: 736px) {
 
 			#banner {
-				padding: 5em 2em 0em 2em;
+				padding: 5em 2em 3em 2em;
 			}
 
 				#banner h2 {
@@ -4285,6 +4286,11 @@
 				}
 
 		}
+		
+		
+		/* my default styles */
+
+		/* end of my default styles */
 
 		.image-john img{    
 			border-radius: 50%;
